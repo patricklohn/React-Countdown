@@ -6,8 +6,8 @@ import './index.css'
 import {createBrowserRouter, RouterProvider} from 'react-router-dom'
 
 // pages 
-import Home from './routers/home.jsx'
-import Countdown from './routers/Countdown.jsx'
+import Home from './routers/home'
+import Countdown from './routers/Countdown'
 
 const router = createBrowserRouter([
   {
@@ -28,6 +28,6 @@ const router = createBrowserRouter([
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <App />
+    <RouterProvider router={router}/>
   </StrictMode>,
 )
